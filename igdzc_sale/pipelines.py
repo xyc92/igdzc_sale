@@ -8,7 +8,7 @@ import MySQLdb
 
 class IgdzcSaleUrlPipeline(object):
     def process_item(self,item,spider):
-        db = MySQLdb.connect("localhost","root","ARDqgRD1","spider",unix_socket="/tmp/mysql.sock")
+        db = MySQLdb.connect("localhost","root","","spider",unix_socket="/tmp/mysql.sock")
         cursor = db.cursor()
         db.set_character_set('utf8')
         cursor.execute('SET NAMES utf8;')
