@@ -10,11 +10,11 @@
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 BOT_NAME = 'igdzc_sale'
-
 SPIDER_MODULES = ['igdzc_sale.spiders']
 NEWSPIDER_MODULE = 'igdzc_sale.spiders'
 HTTPERROR_ALLOWED_CODES = [302]
 REDIRECT_ENABLED = False
+#COOKIES_ENABLED = False
 
 # DOWNLOAD_DELAY=5
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
